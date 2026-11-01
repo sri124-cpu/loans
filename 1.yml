@@ -1,0 +1,21 @@
+name: workflow-2
+on: workflow_dispatch
+jobs:
+ jobx:
+   runs-on: ubuntu-latest
+   steps:
+   - name: this step1
+     run:
+        date
+        echo "Username is $user"
+        sleep 10
+        date
+ joby:
+   runs-on: ubuntu-latest
+   steps:
+   -name: job2-step1
+    run:
+     echo " job stareted time $(date)"
+     
+   
+   
