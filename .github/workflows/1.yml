@@ -1,0 +1,14 @@
+name: Workflow-1
+on: workflow_dispatch
+jobs:
+  jobx:
+    runs-on: ubuntu-latest
+    steps:
+    - name: step-1
+      run: echo "Hello World"
+    - name: step2
+      run: date
+    - name: step3
+      run:
+          pwd
+          hostnamectl          
